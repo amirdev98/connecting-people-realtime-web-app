@@ -41,7 +41,66 @@
     </div>
 
 </footer>
+
+
+
+<!-- CHAT BOX -->
+
+
+  <div id="body">
+    <!--button-->
+    <div id="chat-circle" class="btn btn-raised">
+      <div id="chat-overlay"></div>
+      
+    </div>
+    <!--chat-bot-->
+    <div class="chat-box">
+      <div class="chat-box-body">
+        <!--welcome message-->
+        <div class="chat-box-welcome__header">
+          <div class="chat-box__header-text">
+            <p3 class="chat-box-welcome__company-name">deepPiXEL</p3>
+            <span class="chat-box-toggle"><i class="material-icons">cancel</i></span>
+          </div>
+          <div id="chat-box-welcome__ava">
+            <img class="chat-box-welcome_robot" src="ROBOT.png">
+          </div>
+          <div class="chat-box-welcome__welcome-text">
+            <p>Hi! I'm deepPixel IDA, what can I assist you with?</p>
+          </div>
+        </div>
+        <!--chat-bot after welcome was toggled-->
+        <div id="chat-box__wrapper">
+          <div class="chat-box-header">
+            CHAT-ROOM OBA
+            <span class="chat-box-toggle"><i class="material-icons">cancel</i></span>
+          </div>
+          <div class="chat-box-overlay"></div>
+          <div class="chat-logs">
+            <div id="cm-msg-0" class="chat-msg bot"> 
+              <div class="cm-msg-text">
+                Hoi! Je kunt praten met een medewerker elke dag tussen 09:00 en 17:00.
+                Welke informatie zoek je?              </div>
+            </div>
+            <div class="spin-container">
+              <div class="spiner">
+                <div aria-hidden="true"></div>
+                <div aria-hidden="true"></div>
+                <div aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chat-input-box">
+        <form class="chat-input__form">
+            <input type="text" class="chat-input__text" id="chat-input__text" placeholder="Send a message..." />
+            <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+        </form>
+    </div>
+</div>
+</div>
+<!-- end live-chat -->
 </body>
 </html>
-
 <script src="/index.js"></script>
