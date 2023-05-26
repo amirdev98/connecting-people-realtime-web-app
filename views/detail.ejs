@@ -1,24 +1,37 @@
 <%- include('./partials/head.ejs') %>
 
 <section class="detail-main">
-    <h1>OBA Roelof Hartplein</h1>
-    <p>430, 1071 TT Amsterdam</p>
+    <h1><%= naam %></h1>
+    <p><%= adres %></p>
     <div>
-        <img class="detail-image" src="https://media.graphassets.com/VwMnUsECTYe18QHwPQ6E" alt="Roelof image">
+        <picture>
+            <source type="image/webp" srcset="<%= foto.originalAsWebP %>">
+            <img class="detail-image" src="<%= foto.original %>" alt="OBA Roelof image" width="<%= foto.width %>">
+           </picture>
+        <!-- <img class="detail-image" src="<%= foto.originalAsWebP %>" alt=" OBA Roelof image"> -->
     </div>
     
 </section>
 
 <section class="detail-section">
-    <h1 class="detail-h1">Reserveer hier je studieplek!</h1>
-    <article class="detail-sub">
-      <p class="detail-label">Datum:</p>
-      <input type="date" class="detail-input">
-      <p class="detail-label">Aantal personen:</p>
-      <input type="number" class="detail-input">
-      <button class="detail-button">Reserveer</button>
-      <p class="detail-plek">Plek beschikbaar: 10</p>
-    </article>
+    <h1 class="detail-h1">Reserveer uw studieplek</h1>
+    <form method="POST" action="/success">
+      
+      <input type="hidden" name="vestigingId" value="<%= id %>">
+
+      <label for="name">Naam</label>
+      <input class="textlabel" type="text" id="name" name="name" required />
+
+      <label for="seatNumber">Hoeveel plekken wilt u reserveren?</label>
+      <input type="number" id="seatNumber" name="seatNumber" required />
+
+      <label for="begintijd">Op welke dag wilt u reserveren?</label>
+      <input class="datelabel" type="datetime-local" id="begintijd" name="beginTijd" required />
+
+      <button class="btn-submit" type="submit">Reserveer uw studieplek</button>
+
+      <h1 class="detail-studieplek">Aantal plekken beschikbaar: <%= studieplekken %></h1>
+    </form>
   </section>
 
 

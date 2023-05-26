@@ -305,6 +305,10 @@ footer{
 
 
 /* DETAIL PAGE CSS */
+.detail-studieplek{
+    text-align: right;
+}
+
 .detail-image{
     width: 500px;
 }
@@ -319,68 +323,104 @@ footer{
     flex-direction: column;
 }
 
-/* .detail-plek{
-   text-align: right;
-   margin-right: 20%;
-}
-
-.detail-sub{
-    margin-left: 25%;
-}
-
-.detail-button{
-    margin-left: 300px;
-} */
-
-
-
-/* LOL */
-
 .detail-section{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    max-width: 550px;
+    margin: auto;
+    padding-bottom: 100px;
   }
 
-.detail-sub {
-    justify-content: space-between;
-    align-items: center;
+.detail-h1 {
+    background-color: #b40000;
+    color: white;
+    padding: 20px;
+    margin-top: 20;
   }
-  
-  .detail-label {
-    flex: 1 0 100%;
-    margin-bottom: 10px;
+  form {
+    padding: 0px;
   }
+  label {
+    display: block;
+    margin-block: 1rem;
+    margin-inline:1rem;
+    font-weight: bold;
+    
+  }
+
   
-  .detail-input {
-    flex: 1 0 100%;
-    margin-bottom: 20px;
+  .textlabel,
+  .datelabel{
     padding: 10px;
-    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 20px;
   }
-  
-  @media screen and (min-width: 600px) {
-    .detail-label {
-      flex: 1 0 30%;
-      margin-bottom: 0;
-      padding-right: 20px;
-    }
-    
-    .detail-input {
-      flex: 1 0 70%;
-      margin-bottom: 0;
-    }
-    
-    .detail-button {
-      flex: 1 0 100%;
-    }
-    
-    .detail-plek {
-      flex: 1 0 100%;
-    }
+
+  .btn-submit {
+    background-color: #f40000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
   }
-  
+  .btn-submit:hover {
+    background-color: #000000;
+  }
+  a.btn-submit{
+    text-decoration: none;
+  }
+
+
+
+  /* success-pagina */
+  .body-success {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+
+  .container-success {
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    align-content: center;
+    display: flex; /* add this property */
+    flex-direction: column; /* add this property */
+    justify-content: center; /* add this property */
+  }
+
+  .h1-success {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+  }
+
+  .h2-success {
+    
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+  }
+  .h3-success {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+
+  .ul-success {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
   /* CHAT BOX */
 
   html,
@@ -858,3 +898,30 @@ body {
 }
 
 /* END CHATBOX*/
+
+
+  .li-success {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+  }
+
+.btn-success {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+  background-color: #000000;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+

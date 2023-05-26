@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reserveren</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        background-color: #b40000;
+        color: white;
+        padding: 20px;
+        margin: 0;
+      }
+      form {
+        padding: 20px;
+      }
+      label {
+        display: block;
+        margin-block: 1rem;
+        margin-inline:1rem;
+        font-weight: bold;
+        
+      }
+      input[type="text"],
+      input[type="date"],
+      input[type="time"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .btn-submit {
+        background-color: #f40000;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn-submit:hover {
+        background-color: #000000;
+      }
+	  a.btn-submit{
+		text-decoration: none;
+	  }
+    </style>
+  </head>
+  <body>
+    <h1>Reserveer uw studieplek</h1>
+    <form method="POST" action="/success">
+      <label for="name">Uw naam</label>
+      <input type="text" id="name" name="name" required />
+      <label for="seatNumber">Hoeveel plekken wilt u reserveren?</label>
+      <input type="number" id="seatNumber" name="seatNumber" required />
+      <label for="date">Op welke dag wilt u reserveren?</label>
+      <input type="date" id="date" name="date" required />
+      <label for="time">Tijd</label>
+      <input type="time" id="time" name="time" required />
+      <button class="btn-submit" type="submit">Reserveer uw studieplek</button>
+    </form>
+  </body>
+</html>
