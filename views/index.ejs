@@ -1,0 +1,43 @@
+<%- include('./partials/head') %>
+
+    <section class="overzichtspagina-section">
+        <div class="zoekveld-text">
+            <h1>Vind de dichtstbijzijnde OBA-vestiging</h1>
+            <p>Met 28 vestigingen door heel Amsterdam en daarbuiten is er altijd een OBA bij jou in de buurt. Wil je
+                meer weten over de openingstijden van een vestiging, ben je benieuwd naar welke activiteiten er bij jou
+                in de buurt plaatsvinden of vraag je je af of de OBA bij jou in de wijk rolstoelvriendelijk is? Klik op
+                een vestiging naar keuze en je krijgt alle praktische en actuele informatie te zien.</p>
+        </div>
+        <div class="search">
+            <input class="search-input" type="text" placeholder="Zoeken.." name="search">
+            <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </section>
+
+    <section class="overzichtspagina-section overzicht">
+
+        <% vestigingen.forEach(result=> { %>
+
+            <div class="vestiging-tegel">
+                <div class="text">
+                    <small>Vestiging</small>
+                    <h2>
+                        <%= result.naam %>
+                    </h2>
+                    <p>
+                        Adres: <%= result.adres %>
+                    </p>
+                    <a href="/detail?id=<%= result.id %>">Lees meer </a>
+                </div>
+                <div class="image">
+                    <div>
+                        <img src="<%= result.foto.original %>" alt="boek">
+                    </div>
+                </div>
+            </div>
+
+            <% }) %>
+
+    </section>
+
+    <%- include('./partials/foot') %>

@@ -1,0 +1,38 @@
+<%- include('./partials/head.ejs') %>
+
+<section class="detail-main">
+    <h1><%= naam %></h1>
+    <p><%= adres %></p>
+    <div>
+        <picture>
+            <source type="image/webp" srcset="<%= foto.originalAsWebP %>">
+            <img class="detail-image" src="<%= foto.original %>" alt="OBA Roelof image" width="<%= foto.width %>">
+           </picture>
+        <!-- <img class="detail-image" src="<%= foto.originalAsWebP %>" alt=" OBA Roelof image"> -->
+    </div>
+    
+</section>
+
+<section class="detail-section">
+    <h1 class="detail-h1">Reserveer uw studieplek</h1>
+    <form method="POST" action="/success">
+      
+      <input type="hidden" name="vestigingId" value="<%= id %>">
+
+      <label for="name">Naam</label>
+      <input class="textlabel" type="text" id="name" name="name" required />
+
+      <label for="seatNumber">Hoeveel plekken wilt u reserveren?</label>
+      <input type="number" id="seatNumber" name="seatNumber" required />
+
+      <label for="begintijd">Op welke dag wilt u reserveren?</label>
+      <input class="datelabel" type="datetime-local" id="begintijd" name="beginTijd" required />
+
+      <button class="btn-submit" type="submit">Reserveer uw studieplek</button>
+
+      <h1 class="detail-studieplek">Aantal plekken beschikbaar: <%= studieplekken %></h1>
+    </form>
+  </section>
+
+
+<%- include('./partials/foot.ejs') %>

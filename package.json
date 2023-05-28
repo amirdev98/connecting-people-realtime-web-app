@@ -1,0 +1,33 @@
+{
+  "name": "connecting-people-realtime-web-app",
+  "version": "1.0.0",
+  "description": "KEEP YOURSELF SAFE",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirdev98/connecting-people-realtime-web-app.git"
+  },
+  "author": "mo,david,amir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amirdev98/connecting-people-realtime-web-app/issues"
+  },
+  "homepage": "https://github.com/amirdev98/connecting-people-realtime-web-app#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "npm": "^9.6.2"
+  }
+}
+
+
+
