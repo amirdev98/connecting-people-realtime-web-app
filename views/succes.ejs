@@ -1,4 +1,22 @@
 <%- include('./partials/head.ejs') %>
+  <head>
+    <title>Studieplek gereserveerd</title>
+  </head>
+  <body class="body-success">
+    <div class="container-success">
+      <h1 class="h1-success">Goed nieuws!</h1>
+      <h2 class="h2-success">Het is u gelukt om uw studieplek te reserveren.</h2>
+      <p class="p-success" >Hier kunt u alle details zien over uw gereserveerde plek</p>
+      <ul class="ul-success">   
+        <li class="li-success">Seat Number: <%= seatNumber %></li>
+        <li class="li-success">Date: <%= date %></li>
+        <li class="li-success">Time: <%= time %></li>
+      </ul>
 
+      <h3 class="h3-success">Wij wensen u een fijne studiesessie!</h3>
+      <a href="/" class="btn-success">Terug naar Home</a>
+    </div>
+  </body>
+  <canvas id="confetti" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: 999999;"></canvas>
 
-<%- include('./partials/foot.ejs') %>
+  <%- include('./partials/foot.ejs') %>

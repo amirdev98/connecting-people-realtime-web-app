@@ -87,6 +87,12 @@ app.get('/success', (request, response) => {
   })
 })
 
+app.get('/contact', (request, response) => {
+  fetchJson().then((data) => {
+      response.render('contact', data)
+  })
+})
+
 // Stel het poortnummer in en start express
 app.set("port", process.env.PORT || 8000);
 app.listen(app.get("port"), function () {
