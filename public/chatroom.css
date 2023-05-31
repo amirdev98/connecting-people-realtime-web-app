@@ -23,6 +23,27 @@ body {
     }
   }
 
+  .chatroom ul, .offline, .loading, .empty{
+    background: white;
+    padding: 10px 15px 10px 15px;
+    color: #666;
+    max-width: 75%;
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 3px;
+  }
+
+  .chatroom ul{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .chatroom span{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
   section{
     display: flex;
@@ -64,7 +85,7 @@ body {
   }
   
   .chatroom {
-    width: 20rem;
+    width: 24rem;
     height: 30rem;
     /* background: rgb(239, 238, 238); */
     background: rgba(255, 255, 255, 0.6);
@@ -85,6 +106,19 @@ body {
     font-weight: lighter;
     text-transform: uppercase;
     font-size: 1rem;
+  }
+  
+  .chatroom h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .chatroom span { 
+    font-size: 14px;
+  }
+
+  .chatroom .logo {
+    width: 40px;
   }
   
   .chatroom h1 span {
