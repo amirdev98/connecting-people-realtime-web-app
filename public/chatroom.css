@@ -1,5 +1,5 @@
 body {
-    box-sizing: border-box;
+
     margin: 0;
     padding: 0;
     font-family: Helvetica, Arial, sans-serif;
@@ -22,21 +22,15 @@ body {
       background-position: 100% 100%;
     }
   }
-  
-  main {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    min-width: 100vw;
-    display: flex;
-    justify-content: center;
-  }
+
 
   section{
     display: flex;
     gap: 8em;
     padding-left: 50px;
     padding-right: 50px;
+    justify-content: center;
+    padding-bottom: 150px;
   }
 
   @media (max-width: 1100px){
