@@ -85,7 +85,7 @@ body {
   }
   
   .chatroom {
-    width: 24rem;
+    max-width: 25rem;
     height: 30rem;
     /* background: rgb(239, 238, 238); */
     background: rgba(255, 255, 255, 0.6);
