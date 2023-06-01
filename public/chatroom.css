@@ -136,6 +136,8 @@ body {
     flex-grow: 2;
     width: 18em;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
   }
   
   ::-webkit-scrollbar {

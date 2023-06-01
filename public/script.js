@@ -33,7 +33,7 @@ function hideCircle(evt) {
 
 
 let ioServer = io()
-let messages = document.querySelector('section ul')
+let messages = document.querySelector('.chatroom ul')
 let input = document.querySelector('input')
 
 // State messages
@@ -43,7 +43,7 @@ const errorState = document.querySelector('span.offline')
 
 // Luister naar het submit event
 document.querySelector('form').addEventListener('submit', (event) => {
-  event.preventDefault()
+  event.preventDefault();
 
   // Als er überhaupt iets getypt is
   if (input.value) {
