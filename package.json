@@ -15,6 +15,10 @@
     "type": "git",
     "url": "git+https://github.com/amirdev98/connecting-people-realtime-web-app.git"
   },
+  "keywords": [
+    "express",
+    "socket.io"
+  ],
   "author": "mo,david,amir",
   "license": "ISC",
   "bugs": {
@@ -25,9 +29,7 @@
     "dotenv": "^16.0.3",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "npm": "^9.6.2"
+    "npm": "^9.6.2",
+    "socket.io": "^4.6.2"
   }
 }
-
-
-

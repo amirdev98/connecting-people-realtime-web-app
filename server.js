@@ -1,3 +1,7 @@
+
+/* Losjes gebaseerd op https://socket.io/get-started/chat */
+
+
 import * as path from 'path'
 
 import { Server } from 'socket.io'
