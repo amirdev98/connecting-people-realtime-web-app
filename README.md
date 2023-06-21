@@ -5,7 +5,7 @@
 <img width="323" alt="image" src="https://github.com/amirdev98/connecting-people-realtime-web-app/assets/112856021/dad22b59-2a9c-41f0-9e85-3447376dc7c4">
 
 # Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+OBA Chatroom
 
 ## Inhoudsopgave
 
